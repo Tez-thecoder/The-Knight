@@ -554,7 +554,4 @@ position = Vector2(-44, 66)
 shape = SubResource("WorldBoundaryShape2D_wpy5c")
 
 [node name="Slime" parent="." instance=ExtResource("6_4lved")]
-position = Vector2(400, 15)
-
-[node name="Slime2" parent="." instance=ExtResource("6_4lved")]
-position = Vector2(3, -68)
+position = Vector2(395, 16)
