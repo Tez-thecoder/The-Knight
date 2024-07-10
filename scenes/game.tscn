@@ -1,5 +1,6 @@
-[gd_scene load_steps=14 format=3 uid="uid://ce50twk6tkma4"]
+[gd_scene load_steps=15 format=3 uid="uid://ce50twk6tkma4"]
 
+[ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_h471a"]
 [ext_resource type="PackedScene" uid="uid://dqmuacqatuag0" path="res://scenes/player.tscn" id="1_nh68j"]
 [ext_resource type="Texture2D" uid="uid://cf17ip45sn0df" path="res://assets/sprites/world_tileset.png" id="2_3hlj7"]
 [ext_resource type="PackedScene" uid="uid://ccxlvlnex0f1i" path="res://scenes/platform.tscn" id="3_yqqjf"]
@@ -466,6 +467,10 @@ _data = {
 [node name="Game" type="Node2D"]
 position = Vector2(80, 40)
 
+[node name="GameManager" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("1_h471a")
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_vjjcc")
 format = 2
@@ -564,41 +569,43 @@ shape = SubResource("WorldBoundaryShape2D_wpy5c")
 [node name="Slime" parent="." instance=ExtResource("6_4lved")]
 position = Vector2(395, 16)
 
-[node name="Label" type="Label" parent="."]
-offset_left = -40.0
-offset_top = -81.0
-offset_right = 46.0
-offset_bottom = -58.0
+[node name="Labels" type="Node" parent="."]
+
+[node name="Label" type="Label" parent="Labels"]
+offset_left = 40.0
+offset_top = -41.0
+offset_right = 126.0
+offset_bottom = -18.0
 theme_override_fonts/font = ExtResource("7_buklr")
 theme_override_font_sizes/font_size = 8
 text = "Space to Jump"
 
-[node name="Label2" type="Label" parent="."]
-offset_left = 203.0
-offset_top = -44.0
-offset_right = 289.0
-offset_bottom = -36.0
+[node name="Label2" type="Label" parent="Labels"]
+offset_left = 283.0
+offset_top = -4.0
+offset_right = 374.0
+offset_bottom = 4.0
 theme_override_colors/font_color = Color(0.0117647, 0.14902, 0.34902, 1)
 theme_override_fonts/font = ExtResource("7_buklr")
 theme_override_font_sizes/font_size = 8
 text = "Enemy Ahead..."
 
-[node name="Label3" type="Label" parent="."]
-offset_left = 644.0
-offset_top = -33.0
-offset_right = 782.0
-offset_bottom = -14.0
+[node name="Label3" type="Label" parent="Labels"]
+offset_left = 724.0
+offset_top = 7.0
+offset_right = 862.0
+offset_bottom = 26.0
 theme_override_colors/font_color = Color(0.0117647, 0.14902, 0.34902, 1)
 theme_override_fonts/font = ExtResource("7_buklr")
 theme_override_font_sizes/font_size = 8
 text = "Don't Forget 
 the Coins...."
 
-[node name="Label4" type="Label" parent="."]
-offset_left = 957.0
-offset_top = -65.0
-offset_right = 1095.0
-offset_bottom = -46.0
+[node name="Label4" type="Label" parent="Labels"]
+offset_left = 1037.0
+offset_top = -25.0
+offset_right = 1175.0
+offset_bottom = -6.0
 theme_override_colors/font_color = Color(0.0117647, 0.14902, 0.34902, 1)
 theme_override_fonts/font = ExtResource("7_buklr")
 theme_override_font_sizes/font_size = 8
