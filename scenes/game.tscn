@@ -472,6 +472,19 @@ position = Vector2(80, 40)
 unique_name_in_owner = true
 script = ExtResource("1_h471a")
 
+[node name="ScoreLabel" type="Label" parent="GameManager"]
+offset_left = 1130.0
+offset_top = -151.0
+offset_right = 1233.0
+offset_bottom = -132.0
+theme_override_colors/font_color = Color(0.0117647, 0.14902, 0.34902, 1)
+theme_override_fonts/font = ExtResource("9_66pjw")
+theme_override_font_sizes/font_size = 8
+text = "You collected X coins
+"
+horizontal_alignment = 1
+autowrap_mode = 2
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_vjjcc")
 format = 2
@@ -651,16 +664,3 @@ theme_override_fonts/font = ExtResource("7_buklr")
 theme_override_font_sizes/font_size = 8
 text = "Go UP!
 "
-
-[node name="Label6" type="Label" parent="Labels"]
-offset_left = 1130.0
-offset_top = -151.0
-offset_right = 1233.0
-offset_bottom = -132.0
-theme_override_colors/font_color = Color(0.0117647, 0.14902, 0.34902, 1)
-theme_override_fonts/font = ExtResource("9_66pjw")
-theme_override_font_sizes/font_size = 8
-text = "You collected X coins
-"
-horizontal_alignment = 1
-autowrap_mode = 2
