@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://ce50twk6tkma4"]
+[gd_scene load_steps=16 format=3 uid="uid://ce50twk6tkma4"]
 
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_h471a"]
 [ext_resource type="PackedScene" uid="uid://dqmuacqatuag0" path="res://scenes/player.tscn" id="1_nh68j"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://2shkap5wwmfy" path="res://scenes/killzone.tscn" id="5_33wob"]
 [ext_resource type="PackedScene" uid="uid://k4ruqr6byw8f" path="res://scenes/slime.tscn" id="6_4lved"]
 [ext_resource type="FontFile" uid="uid://dduqkg47jm6e8" path="res://assets/fonts/PixelOperator8.ttf" id="7_buklr"]
+[ext_resource type="FontFile" uid="uid://4rpc7fqoruix" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="9_66pjw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w0rws"]
 texture = ExtResource("2_3hlj7")
@@ -630,14 +631,14 @@ theme_override_font_sizes/font_size = 8
 text = "Almost there..."
 
 [node name="Label5" type="Label" parent="Labels"]
-offset_left = 1117.0
+offset_left = 1143.0
 offset_top = -164.0
-offset_right = 1255.0
-offset_bottom = -156.0
+offset_right = 1223.0
+offset_bottom = -154.0
 theme_override_colors/font_color = Color(0.0117647, 0.14902, 0.34902, 1)
-theme_override_fonts/font = ExtResource("7_buklr")
+theme_override_fonts/font = ExtResource("9_66pjw")
 theme_override_font_sizes/font_size = 8
-text = "You made it..
+text = "Great Job
 "
 
 [node name="Label7" type="Label" parent="Labels"]
@@ -652,12 +653,14 @@ text = "Go UP!
 "
 
 [node name="Label6" type="Label" parent="Labels"]
-offset_left = 1117.0
-offset_top = -153.0
-offset_right = 1255.0
-offset_bottom = -145.0
+offset_left = 1130.0
+offset_top = -151.0
+offset_right = 1233.0
+offset_bottom = -132.0
 theme_override_colors/font_color = Color(0.0117647, 0.14902, 0.34902, 1)
-theme_override_fonts/font = ExtResource("7_buklr")
+theme_override_fonts/font = ExtResource("9_66pjw")
 theme_override_font_sizes/font_size = 8
 text = "You collected X coins
 "
+horizontal_alignment = 1
+autowrap_mode = 2
