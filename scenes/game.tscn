@@ -578,13 +578,13 @@ position = Vector2(1477, -8)
 position = Vector2(1516, -35)
 
 [node name="Platform5" parent="Platforms" instance=ExtResource("3_yqqjf")]
-position = Vector2(1583, -54)
+position = Vector2(1571, -46)
 
 [node name="Platform6" parent="Platforms" instance=ExtResource("3_yqqjf")]
-position = Vector2(1515, -73)
+position = Vector2(1571, -69)
 
 [node name="Platform7" parent="Platforms" instance=ExtResource("3_yqqjf")]
-position = Vector2(1557, -92)
+position = Vector2(1524, -90)
 
 [node name="Platform8" parent="Platforms" instance=ExtResource("3_yqqjf")]
 position = Vector2(1468, -99)
